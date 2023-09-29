@@ -1,51 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<!-- Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Gaegu' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=hachi maru pop' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Hubballi' rel='stylesheet'>
+	<!-- Style Sheet for Flex Table -->
+<link rel = "stylesheet" href = "style.css">
 
 	<title>Coffee Tasting Guide</title>
+
 	<style>
 		body {background-color: Peru;}
-		h1 {color: antiquewhite;}
-		h1 {font-family: 'Gaegu'; font-size: 45px}
-		h1 {text-align:center;}
-		p {text-align:center;}
-		p {color: saddlebrown;}
-		p{font-family: 'Hubballi'; font-size: 25px}
-		table{text-align:center;}
-		table{font-family:'Hubballi'; font-size: 25px}
-		table{color: saddlebrown}
-		
-		.button{
-			border: 2px solid saddlebrown;
-			border-radius: 12px;
-			padding: 5px;
-			background-color: Burlywood;
-			color: saddlebrown;
-			text-align: center;
-			font-family: 'Hubballi';
-			font-size: 25px;
-			border-style: dashed;
-			}
-
-		.buttonhov:hover{
-			border: 2px solid saddlebrown;
-			border-radius: 12px;
-			padding: 5px;
-			background-color: Burlywood;
-			color: saddlebrown;
-			text-align: center;
-			font-family: 'Hubballi';
-			font-size: 25px;
-			cursor: pointer;
-			}
-
-
+		h1 {font-family: 'Gaegu'; font-size: 45px; text-align:center; color: antiquewhite;}
 	</style>
 
 </head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <body>
 <h1> Maddog's Coffee Tasting Guide </h1>
@@ -53,35 +26,24 @@
 
 <p> Choose your favorite region of coffee &#9749;</p>
 
-<table>
-	<tr>
-		<th>Latin America</th>
-		<th>Africa</th>
-		<th>Indonesia</th>
-	</tr>
-	<tr>
-		<td>Coffee from this region is known for its chocolatey flavors.</td>
-		<td>Coffee from this region is known for tasting like fruit and berries.</td>
-		<td>Coffee from this region is known for tasting earthy and spicy.</td>
-	</tr>
-	<tr>
-		<td> 
-			<button class = "button buttonhov">
-				<!--onclick="document.getElementById('').innerHTML =-->
-			Click for Latin America!</button>
-		</td>
-
-		<td>
-			<button class = "button buttonhov">
-				<!--onclick="document.getElementById('').innerHTML =-->
-			Click for Africa!</button>
-		</td>
-		<td>
-			<button class = "button buttonhov">
-				<!--onclick="document.getElementById('').innerHTML =-->
-			Click for Indonesia!</button>
-		</td>
-	</tr>
+<div class = "sectionwrapper">
+	<section class = "section">
+		<h class = "sectiontitle" ><u>Latin America</u></h>
+		<p class = "pgraph">Coffee from this region is known for its chocolatey flavors.</p>
+		<button class = "button buttonhov">Click for Latin America!</button>
+	</section>
+	<section class = "section">
+		<h class = "sectiontitle" ><u>Africa</u></h>
+		<p>Coffee from this region is known for tasting like fruit and berries.</p>
+		<button class = "button buttonhov">Click for Africa!</button>
+	</section>
+	<section class = "section">
+		<h class = "sectiontitle" ><u>Indonesia</u></h>
+		<p>Coffee from this region is known for tasting earthy and spicy.</p>
+		<button class = "button buttonhov">Click for Indonesia!</button>
+	</section>
+</div>
 </body>
-<!-- work on buttons and the next pages tm! -->
+<!-- work on buttons and the next pages tm! 
+Might be best to make other pages that the button links to instead of making it all on one page? Def easier but not sure if that shows the most skill-->
 </html>
