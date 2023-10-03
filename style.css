@@ -1,6 +1,7 @@
 .sectionWrapper{
   display: flex;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/
+  gap: 25px;
   align-items: center;
 }
 .section{
@@ -10,8 +11,7 @@
   align-items: center;
 }
 .sectionTitle{
-  /* color if needed */
-  font-size: 45px;
+  font-size: 35px;
   margin-bottom: 0;
   /*text-decoration: underline;*/
   color: saddlebrown;
@@ -50,3 +50,7 @@
       font-family: 'Hubballi', cursive, sans-serif; 
       font-size: 25px;
       }
+
+.hidden{
+  display: none;
+}
